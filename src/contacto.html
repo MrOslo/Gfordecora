@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gfordecora</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    lin
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">GFORDECORA</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="sobre.html" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Sobre</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Trabalhos</a>
+        <a href="contacto.html" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Contactos</a>
+      </div>
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="teste.html" class="w3-bar-item w3-button w3-hover-none w3-border-blue w3-bottombar w3-hover-border-green">GFORDECORA</a>
+          <a href="contacto.html" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Contactos</a>
+          <a href="trabalho.html" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Trabalhos</a>
+          <a href="sobre.html" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Sobre</a>
+        </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="imagem/gfordecora.png.jpeg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.facebook.com/gfordecora" target="_blank">
+              <i data-feather="facebook"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.instagram.com/gfordecora" target="_blank">
+             <i data-feather="instagram"></i>
+          </a>
+          </a>
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="./resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-medium" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.34em;"></i>
+            <span class="w3-margin-left download-text"></span>Tabela de Preços</span>
+          </a>
+        </div>
+      </section>
+      <!--Form section-->
+      <section>
+        <form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
+            <p>A GFORDECORA foi criada com o objectivo de realizar o seu evento de sonho, tanto servindo como criando o ambiente perfeito para o seu evento. 
+                Seguindo exactamente como deseja ter o seu evento, temos todo o tipo de material e esforço para que o seu evento seja realizado e nos melhores preços do mercado!
+                Desde o aluguer de materias à consultoria de eventos e decoração.
+            </p>
+            <p class="w3-large w3-text-pink">Por isso, não exite em contactar-nos!</p>
+            <div class="w3-section">
+              <label><b>Nome</b></label>
+              <input class="w3-input w3-border" type="text" required name="Name">
+            </div>
+            <div class="w3-section">
+              <label><b>Email</b></label>
+              <input class="w3-input w3-border" type="text" required name="Email">
+            </div>
+            <div class="w3-section">
+              <label><b>Mensagem</b></label>
+              <input class="w3-input w3-border" required name="Message">
+            </div>
+            <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
+          </form>
+      </section>
+
+          <!--CONTACT SECTION-->
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important; text-align: center;">Contactos</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500; text-align: center;">
+              <p>Gfor & Filhos,Lda</p>
+              <p>Quadra F,Zango 3, Luanda</p>
+              <p>+244 923 416 340/+244 927 115 170</p>
+              <p>gfordecora@gmail.com.com</p>
+            </div>
+          </div>
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2022 - Gfor & Filhos, Lda</p>
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
